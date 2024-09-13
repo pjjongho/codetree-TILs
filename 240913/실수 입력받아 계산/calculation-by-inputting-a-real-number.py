@@ -1,0 +1,5 @@
+a = input()
+a = float(a)
+b = input()
+b = float(b)
+print(f'{(a+b):.2f}')
