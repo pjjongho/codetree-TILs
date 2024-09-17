@@ -1,6 +1,14 @@
 arr = list(map(int,input().split()))
+a = arr[0]
+b = arr[1]
+c = arr[2]
 
-if arr[0]==min(arr) and arr[0]==arr[1]==arr[2]:
-    print(1, 1)
+if a <= b and a <=c:
+    print("1", end=" ")
 else:
-    print(0, 0)
+    print("0", end=" ")
+
+if a==b and b==c:
+    print("1")
+else:
+    print("0")
