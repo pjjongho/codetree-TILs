@@ -1,10 +1,10 @@
 m = int(input())
 
-if m==[3,4,5]:
+if 3<=m<=5:
     print('Spring')
-elif m==[6,7,8]:
+elif 6<=m<=8:
     print('Summer')
-elif m==[9,10,11]:
+elif 9<=m<=11:
     print('Fall')
 else:
     print('Winter')
