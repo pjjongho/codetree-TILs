@@ -4,10 +4,10 @@ b = int(input())
 if b>=19:
     if a==0:
         print('MAN')
-    elif a==1:
+    else:
         print('WOMAN')
 else:
     if b<19:
         print('BOY')
-    elif a==1:
+    else:
         print('GIRL')
