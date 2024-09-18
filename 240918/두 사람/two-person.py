@@ -2,6 +2,6 @@ a = input().split()
 b = input().split()
 
 if (a[0]>='19' and a[1]=='M') or (b[0]>='19' and b[1]=='M'):
-    print(1)
+    print(1, end=" ")
 else:
-    print(0)
+    print(0, end=" ")
