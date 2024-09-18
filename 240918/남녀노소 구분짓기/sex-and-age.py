@@ -8,6 +8,6 @@ if b>=19:
         print('WOMAN')
 else:
     if a==1:
-        print('BOY')
-    else:
         print('GIRL')
+    else:
+        print('BOY')
