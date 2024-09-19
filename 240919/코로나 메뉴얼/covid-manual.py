@@ -15,7 +15,7 @@ if a_g=='Y' and a_t>=37:
         print("E")
     else:
         print('N')
-elif b_g=='Y' and b_t>37:
+elif b_g=='Y' and b_t>=37:
     if c_g=='Y' and c_t>=37:
         print('E')
     else:
