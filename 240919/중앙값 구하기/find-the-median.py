@@ -1,11 +1,8 @@
-a,b,c = map(int,input().split())
-if a>=b:
-    if b>=c:
-        print(b)
-    else:
-        if a>=c:
-            print(c)
-        if a<c:
-            print(a)
-        if a<b:
-            print(a)
+a, b, c = map(int, input().split())
+
+if (a >= b and a <= c) or (a >= c and a <= b):
+    print(a)
+elif (b >= a and b <= c) or (b >= c and b <= a):
+    print(b)
+else:
+    print(c)
