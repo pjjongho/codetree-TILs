@@ -8,4 +8,4 @@ if a>=b:
         if a<c:
             print(a)
         if a<b:
-            print(b)
+            print(a)
