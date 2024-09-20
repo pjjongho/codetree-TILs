@@ -1,4 +1,5 @@
-a, b= map(int,input().split())
+a = int(input())
+b = int(input())
 
 if a/1==a:
     for _ in range(b):
