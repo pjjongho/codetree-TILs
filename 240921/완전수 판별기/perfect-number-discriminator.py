@@ -1,10 +1,11 @@
 n = int(input())
 sum_ab = 0
 
-for i in range(1,n+1):
-    if i%n==0:
+for i in range(1, n):
+    if n % i == 0:
         sum_ab += i
-if sum_ab==n:
-    print('P')
+
+if n == sum_ab:
+    print("P")
 else:
-    print('N')
+    print("N")
