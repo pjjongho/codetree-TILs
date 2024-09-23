@@ -2,11 +2,12 @@ while True:
     n = int(input())
     if n==1:
         print('John')
-    if n==2:
+    elif n==2:
         print('Tom')
-    if n==3:
+    elif n==3:
         print('Paul')
-    if n==4:
+    elif n==4:
         print('Sam')
     else:
         print('Vacancy')
+        break
