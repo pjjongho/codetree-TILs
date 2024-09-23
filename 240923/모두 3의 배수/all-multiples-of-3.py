@@ -1,4 +1,4 @@
-answer = False
+answer = True
 
 for i in range(5):
     n= int(input())
