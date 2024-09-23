@@ -8,5 +8,5 @@ while True:
         print('Paul')
     if n==4:
         print('Sam')
-        break
-print('Vacancy')
+    else:
+        print('Vacancy')
