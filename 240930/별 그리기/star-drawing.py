@@ -7,7 +7,7 @@ for i in range(n):
         print("*", end="")
     print()
 
-for i in range(0, n):   
+for i in range(0, n-1):   
     for _ in range(i+1):
         print(" ", end="")
     for _ in range((2 * n) - (2 * i)-n):
