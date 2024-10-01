@@ -1,10 +1,12 @@
 n = int(input())
 
 for i in range(n):
-    if i==0:
-        print('*',end=' ')
-    else:
-        for j in range(n-2):
-            if i>0:
+    for j in range(n):
+        if n<=1:
+            print('*', end=' ')
+        else:
+            if (i and j)!=0 and (i and j) !=n and i<=j:
                 print(' ', end=' ')
-print()
+            else:
+                print('*',end=' ')
+        print()
