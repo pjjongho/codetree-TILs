@@ -7,4 +7,4 @@ for i in n:
         break
     sum_val += i
     lst.append(sum_val)
-print(f'{sum_val} {sum_val/len(lst)}')
+print(f'{sum_val} {(sum_val/len(lst)):.1f}')
