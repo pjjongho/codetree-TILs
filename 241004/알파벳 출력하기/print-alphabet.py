@@ -1,11 +1,10 @@
-k=65
-n=int(input())
+n = int(input())
+cnt = 'A'
+
 for i in range(n):
-    for _ in range(i+1):
-        if k != ord('Z'):
-            print(chr(k), end='')
-            k+=1
-        if k >= ord('Z'):
-            print(chr(k), end='')
-            k=ord('A')
-    print()
+	for _ in range(i + 1):
+		print(cnt, end="")
+		cnt = chr(ord(cnt) + 1)
+		if ord(cnt) > ord('Z'):
+			cnt = 'A'
+	print()
