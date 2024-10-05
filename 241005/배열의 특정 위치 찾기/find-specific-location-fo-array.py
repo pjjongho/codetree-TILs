@@ -9,4 +9,4 @@ for i in n:
     if i%3==0:
         sum_val2 +=i
         cnt += 1
-print(sum_val, sum_val2/cnt)
+print(f'{sum_val} {(sum_val2/cnt):.1f}')
