@@ -1,9 +1,9 @@
-n = list(map(int,input().split()))
+arr = list(map(int,input().split()))
 cnt = 0
 sum_val = 0
 sum_val2 = 0
 
-for i in n:
+for i in arr:
     if i%2==0:
         sum_val += i
     if i%3==0:
