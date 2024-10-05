@@ -1,17 +1,18 @@
-arr = list(map(int,input().split()))
+# 배열에 주어진 수를 입력받아 저장합니다.
+arr = list(map(int, input().split()))
+sum2 = 0
+sum3 = 0
 cnt = 0
-filtered_arr1 = arr[1::2]
-filtered_arr2 = arr[2::3]
-sum_val = 0
-sum_val2 = 0
 
-for i in filtered_arr1:
-    if i%2==0:
-        sum_val += i
+# 짝수 번째 인덱스에 들어있는 수들의 합과 3의 배수 번째 인덱스에 들어있는 수들의 평균을 구합니다.
+for i in range(10):
+	if (i + 1) % 2 == 0:
+		sum2 += arr[i]
+	if (i + 1) % 3 == 0:
+		sum3 += arr[i]
+		cnt += 1
 
-for i in filtered_arr2:
-    if i%3==0:
-        sum_val2 +=i
-        cnt += 1
+# 3의 배수 번째 인덱스에 들어있는 수들의 평균 구하기
+avg3 = sum3 / cnt
 
-print(f'{sum_val} {(sum_val2/cnt):.1f}')
+print(f"{sum2} {avg3:.1f}")
