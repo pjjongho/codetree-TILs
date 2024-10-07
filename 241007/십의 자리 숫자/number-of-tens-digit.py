@@ -1,14 +1,15 @@
-arr_to=list(map(int, input().split()))
-count_arr = [0] * len(arr_to)
+# 배열에 주어진 수를 입력받아 저장합니다.
+arr = list(map(int, input().split()))
+count_arr = [0] * 10
 
-for i in range(len(arr_to)):
-    if arr_to[i] == 0:
-        break
-    count_arr.append(arr_to[i]//10)
-
-for elem in count_arr:
-    count_arr[elem] += 1
-
+# 카운팅 배열을 통해 십의 자리수 각각의 빈도 저장, 0이 나오면 for문에서 빠져나오기
+for elem in arr:
+	if elem == 0:
+		break
+	if elem < 10:
+		continue
+	count_arr[elem // 10] += 1
+	
+# 1부터 9까지 나온 횟수를 출력
 for i in range(1, 10):
-    cnt = count_arr[i]
-    print(f"{i} - {cnt}")
+	print(f"{i} - {count_arr[i]}")
