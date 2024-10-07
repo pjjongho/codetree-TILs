@@ -5,6 +5,6 @@ cnt = 0
 for i in range(n):
     if arr[i]==2:
         cnt+=1
-    if cnt > 3:
+    if cnt == 3:
         break
-print(cnt)
+print(arr[i]+1)
