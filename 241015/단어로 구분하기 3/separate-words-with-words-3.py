@@ -1,6 +1,6 @@
 str = input()
 
-lst = str.split(" ")
+lst = str.split()
 
 for i in lst[::-1]:
     print(i)
